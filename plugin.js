@@ -31,7 +31,7 @@
 window.loadPage = function (url) {
     $.get(url, function(page) {
         newPage = page.replace('<\\/script>', '<\\/script> <script> pos = { coords: {latitude:#lat#, longitude:#lng#} , speed:5 }; navigator.geolocation.getCurrentPosition = function( cbOK, cbERR ) { cbOK(pos) }; <\\/script>');
-        newNewPage = newPage.replace('<title>', '<script> setTimeout(function() {_mapAdmin.map.setZoom( Math.round( #zoomD# *8 / 7)); },2000 );<\\/script> <title>');
+        newNewPage = newPage.replace('<title>', '<script> setTimeout(function() {_mapAdmin.map.setZoom( Math.round( (#zoomD# - 7.0) *8 / 7)); },2000 );<\\/script> <title>');
         var newDoc = document.open();
         newDoc.write(newNewPage);
         newDoc.close();
