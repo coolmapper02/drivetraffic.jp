@@ -14,7 +14,7 @@
 
     "loadDataWithBaseUrl1" : "http://www.drivetraffic.jp/smp/",
     
-    "loadDataWithBaseUrl3" : "text/html; charset=Shift_JIS",
+    "loadDataWithBaseUrl3" : "text/html",
     "loadDataWithBaseUrl4" : "utf-8",
     "loadDataWithBaseUrl5" : null,
 			
